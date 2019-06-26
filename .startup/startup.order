@@ -1,6 +1,6 @@
+websocketd
+hugo
 installZeppelin.sh
 installKafka.sh
 nodetool-repair.sh
-websocketd
-hugo
 restartOpsCenter.sh
