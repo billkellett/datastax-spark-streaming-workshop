@@ -1,4 +1,5 @@
 installZeppelin.sh
+installKafka.sh
 nodetool-repair.sh
 websocketd
 hugo
