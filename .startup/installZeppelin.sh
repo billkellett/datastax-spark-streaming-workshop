@@ -2,14 +2,14 @@
 
 # BK VERSION
 
-# Download Zeppelin from Google Drive
+# Download Zeppelin
 # Zeppelin distribution (DSE-specific) by doanduyhai http://www.doanduyhai.com/blog/?p=2325
 
 # If we are on node0 install Zeppelin, copy Notebooks and start it up.
 if [ `hostname` == 'node0' ]
 then
   echo "Downloading Zeppelin..."
-  curl -s -o zeppelin-0.7.1.tar.gz 'https://s3.amazonaws.com/dse-sketch-examples/zeppelin-0.7.1-dse-5.1.1.tar.gz' -L 2>&1 | tee zeppelin-download.log
+  curl -s -o zeppelin-0.7.1.tar.gz 'http://billkellett.net/dse/zeppelin-0.7.1.tar.gz' -L 2>&1 | tee zeppelin-download.log
   echo "... Zeppelin download complete."
 
   echo "Untar Zeppelin."
