@@ -2,7 +2,7 @@ websocketd
 hugo
 streaming-workshop-ddl.sh
 installWorkshopExecutables.sh
-installZeppelin.sh
 installKafka.sh
+installZeppelin.sh
 nodetool-repair.sh
 restartOpsCenter.sh
