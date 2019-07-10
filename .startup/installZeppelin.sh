@@ -70,7 +70,7 @@ then
   # import zeppelin notebooks
   echo "Importing Zeppelin notebooks..."
   curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/bkplay.json \--header "Content-Type: application/json"
-  #curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/Lab_2_-_Spark-SQL_for_OLTP_Aggregations.json \--header "Content-Type: application/json"
+  curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/Lab_1_-_Streaming_Detail_Data.json \--header "Content-Type: application/json"
   #curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/Lab_3_-_Spark-SQL_for_ETL.json \--header "Content-Type: application/json"
   #curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/Lab_4_-_Spark-SQL_Programming.json \--header "Content-Type: application/json"
   echo "... Zeppelin notebooks import complete."
