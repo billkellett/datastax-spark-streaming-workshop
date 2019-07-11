@@ -4,5 +4,6 @@ streaming-workshop-ddl.sh
 installWorkshopExecutables.sh
 installKafka.sh
 installZeppelin.sh
+createSparkCheckpointDirectory.sh
 nodetool-repair.sh
 restartOpsCenter.sh
