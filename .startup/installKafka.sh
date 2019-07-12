@@ -31,6 +31,9 @@ then
   echo "Configure Kafka..."
   cd /tmp/datastax-spark-streaming-workshop/kafka_2.12-2.2.0/bin
   ./kafka-topics.sh --create --bootstrap-server node0:9092 --replication-factor 1 --partitions 1 --topic rating_modifiers
+  ./kafka-topics.sh --create --bootstrap-server node0:9092 --replication-factor 1 --partitions 1 --topic good_news
+  ./kafka-topics.sh --create --bootstrap-server node0:9092 --replication-factor 1 --partitions 1 --topic bad_news
+
   sleep 15
   echo "... Kafka configured."
 
