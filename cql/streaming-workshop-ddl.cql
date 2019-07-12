@@ -33,7 +33,7 @@ create table if not exists streaming_workshop.ratings_modifiers_heavyweight (
 )
 with clustering order by (event_sequence_number desc);
 
-create table if not exists streaming_workshop.ratings_modifiers_aggregated_complete (
+create table if not exists streaming_workshop.ratings_modifiers_aggregated_all_time (
     instrument_symbol           text,
     ethical_category            text,
     total_events                int,
@@ -45,9 +45,9 @@ with clustering order by (ethical_category asc);
 create table if not exists streaming_workshop.ratings_modifiers_aggregated_windowed (
     instrument_symbol           text,
     ethical_category            text,
-    event_time_window           text,
     total_events                int,
     weighted_sentiment_change   int,
-    primary key ((instrument_symbol), ethical_category, event_time_window)
+    last_update_window          text,
+    primary key ((instrument_symbol), ethical_category)
 )
-with clustering order by (ethical_category asc, event_time_window desc);
+with clustering order by (ethical_category asc);
