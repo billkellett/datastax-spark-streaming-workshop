@@ -22,7 +22,18 @@ create table if not exists streaming_workshop.ratings_modifiers_all (
 )
 with clustering order by (event_sequence_number desc);
 
-create table if not exists streaming_workshop.ratings_modifiers_heavyweight (
+create table if not exists streaming_workshop.ratings_modifiers_good_news (
+    instrument_symbol           text,
+    ethical_category            text,
+    event_sequence_number       int,
+    source_url                  text,
+    source_weight               int,
+    source_sentiment            int,
+    primary key ((instrument_symbol, ethical_category), event_sequence_number)
+)
+with clustering order by (event_sequence_number desc);
+
+create table if not exists streaming_workshop.ratings_modifiers_bad_news (
     instrument_symbol           text,
     ethical_category            text,
     event_sequence_number       int,
