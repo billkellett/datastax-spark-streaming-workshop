@@ -31,7 +31,8 @@ then
     done
   fi
 
-   dse fs "mkdir checkpoint/lab1/"   # create checkpoint directory for lab 1
+   dse fs "mkdir checkpoint"          # create checkpoint parent directory
+   dse fs "mkdir checkpoint/lab1/"    # create checkpoint directory for lab 1
    dse fs "mkdir checkpoint/lab2a/"   # create checkpoint directory for lab 2a
    dse fs "mkdir checkpoint/lab2b/"   # create checkpoint directory for lab 2b
 
