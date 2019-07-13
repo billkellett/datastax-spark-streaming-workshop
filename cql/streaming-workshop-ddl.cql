@@ -29,9 +29,9 @@ create table if not exists streaming_workshop.ratings_modifiers_good_news (
     source_url                  text,
     source_weight               int,
     source_sentiment            int,
-    primary key ((instrument_symbol, ethical_category), event_sequence_number)
+    primary key ((instrument_symbol), ethical_category, event_sequence_number)
 )
-with clustering order by (event_sequence_number desc);
+with clustering order by (ethical_category asc, event_sequence_number desc);
 
 create table if not exists streaming_workshop.ratings_modifiers_bad_news (
     instrument_symbol           text,
@@ -40,9 +40,9 @@ create table if not exists streaming_workshop.ratings_modifiers_bad_news (
     source_url                  text,
     source_weight               int,
     source_sentiment            int,
-    primary key ((instrument_symbol, ethical_category), event_sequence_number)
+    primary key ((instrument_symbol), ethical_category, event_sequence_number)
 )
-with clustering order by (event_sequence_number desc);
+with clustering order by (ethical_category asc, event_sequence_number desc);
 
 create table if not exists streaming_workshop.ratings_modifiers_aggregated_all_time (
     instrument_symbol           text,
