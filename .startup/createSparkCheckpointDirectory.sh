@@ -37,7 +37,7 @@ then
    dse fs "mkdir checkpoint/lab2b/"   # create checkpoint directory for lab 2b
    dse fs "mkdir checkpoint/lab3piper/"   # create checkpoint directory for lab 3 piper
    dse fs "mkdir checkpoint/lab3goodnews/"   # create checkpoint directory for lab 3 good news handler
-   dse fs "mkdir checkpoint/lab2badnews/"   # create checkpoint directory for lab 3 bad news handler
+   dse fs "mkdir checkpoint/lab3badnews/"   # create checkpoint directory for lab 3 bad news handler
 
    sleep 10s
 fi
