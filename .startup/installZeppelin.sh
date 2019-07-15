@@ -73,7 +73,6 @@ then
 
   # import zeppelin notebooks
   echo "Importing Zeppelin notebooks..."
-  curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/bkplay.json \--header "Content-Type: application/json"
   curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/Lab_1_-_Streaming_Detail_Data.json \--header "Content-Type: application/json"
   curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/Lab_2_-_Streaming_Aggregations.json \--header "Content-Type: application/json"
   curl -vX POST http://node0:8080/api/notebook/import -d @notebooks/Lab_3_-_Pipelining.json \--header "Content-Type: application/json"
