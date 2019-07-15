@@ -2,7 +2,6 @@
 
 ## NOTE: You MUST run this workshop on cluster instances of m3.2xlarge or better.  It will NOT run on m3.xlarge.
 
-
 This is a 2-hour introductory workshop on DataStax Spark Structured Streaming.
 
 ### Motivation
